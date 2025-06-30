@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Do You Love Me?</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- প্রেমের গান -->
+  <audio autoplay loop>
+    <source src="assets/valobashi.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- লোগো -->
+  <img src="assets/logo.jpg" alt="Logo" class="logo top-right" />
+
+  <div class="container">
+    <h1 id="loveMessage">Do You Love Me, [Name]? ❤️</h1>
+    <div class="buttons">
+      <button id="yesBtn" onclick="goToPage3()">Yes ❤️</button>
+      <button id="noBtn" onclick="moveNoButton(this)">No 💔</button>
+    </div>
+  </div>
+</body>
+</html>
